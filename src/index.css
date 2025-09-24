@@ -1,1 +1,31 @@
 @import "tailwindcss";
+
+/* CSS Custom Properties for Theme Variables */
+:root {
+  /* Light mode colors */
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+}
+
+.dark {
+  /* Dark mode colors */
+  --color-background: #000000;
+  --color-foreground: #ffffff;
+}
+
+/* Base styles */
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
