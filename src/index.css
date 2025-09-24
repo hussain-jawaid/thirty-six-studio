@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: pp;
+  src: url(./assets/PPNeueMontreal-Regular.48a63c42.woff2);
+}
+
 /* CSS Custom Properties for Theme Variables */
 :root {
   /* Light mode colors */
@@ -17,6 +22,21 @@
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
+  font-family:
+    pp,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Ubuntu,
+    Cantarell,
+    Noto Sans,
+    Helvetica Neue,
+    Arial,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
